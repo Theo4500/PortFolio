@@ -1,14 +1,15 @@
 <?php
 // Compétences — Modifiez le nom et le pourcentage
 $competences = [
-  ['nom' => 'HTML / CSS / JS',             'niveau' => 90],
-  ['nom' => 'PHP / MySQL',                 'niveau' => 80],
-  ['nom' => 'Python',                      'niveau' => 75],
+  ['nom' => 'HTML / CSS / JS',             'niveau' => 100],
+  ['nom' => 'PHP / MySQL',                 'niveau' => 100],
+  ['nom' => 'Python',                      'niveau' => 100],
   ['nom' => 'React / Node.js',             'niveau' => 70],
-  ['nom' => 'Administration Linux',        'niveau' => 72],
-  ['nom' => 'Réseau (TCP/IP, VLAN, VPN)',  'niveau' => 78],
-  ['nom' => 'Docker / Virtualisation',     'niveau' => 65],
-  ['nom' => 'Git / CI-CD',                 'niveau' => 73],
+  ['nom' => 'Réseau (TCP/IP, VLAN, VPN)',  'niveau' => 45],
+  ['nom' => 'Virtualisation',     'niveau' => 60],
+  ['nom' => 'Sécurité informatique',       'niveau' => 100],
+  ['nom' => 'Gestion de projet (Agile/Scrum)',   'niveau' => 85],
+  ['nom' => 'Travail en équipe',              'niveau' => 100]
 ];
 ?>
 
