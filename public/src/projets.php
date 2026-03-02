@@ -22,7 +22,7 @@ $projets = [
     'cover'       => 'cover-3',
     'titre'       => 'FFSSActus - Création d\'un site d\'actus en temps réel avec flux RSS pour la FFSS',
     'description' => 'Développement d\'un site web dynamique affichant les actualités en temps réel de la Fédération Française de Sauvetage et de Secourisme (FFSS) à partir de flux RSS.',
-    'tags'        => ['HTML', 'CSS', 'JavaScript', 'RSS', 'PHP', 'SQL'],
+    'tags'        => ['CSS', 'JavaScript', 'RSS', 'PHP', 'SQL'],
     'url'         => 'public/assets/FFSSActus.pdf', 'download' => true,
   ],
   [
@@ -30,7 +30,7 @@ $projets = [
     'cover'       => 'cover-4',
     'titre'       => 'FFSSInventory - Application de bureau pour l\'inventaire du matériel de la FFSS',
     'description' => 'Développement d\'une application de bureau pour l\'inventaire du matériel de la Fédération Française de Sauvetage et de Secourisme (FFSS) avec synchronisation cloud.',
-    'tags'        => ['HTML', 'CSS', 'Javascript', 'PHP', 'SQL', 'Scanner'],
+    'tags'        => ['CSS', 'Javascript', 'PHP', 'SQL', 'Scanner'],
     'url'         => 'public/assets/FFSSInventory.pdf', 'download' => true,
   ],
   [
@@ -40,6 +40,14 @@ $projets = [
     'description' => 'Développement d\'un site web d\'évaluation de biens immobiliers avec gestion des données et génération de rapports.',
     'tags'        => ['HTML', 'CSS', 'Javascript', 'PHP', 'SQL', 'Bootstrap', 'Twig'],
     'url'         => 'public/assets/CDC_CheckMyStars.pdf', 'download' => true,
+  ],
+  [
+    'numero'      => '06',
+    'cover'       => 'cover-6',
+    'titre'       => 'Kaizix Learning - Site de e-learning pour la formation continue',
+    'description' => 'Développement d\'un site web de formation continue en e-learning avec gestion des utilisateurs, des cours et des évaluations.',
+    'tags'        => ['CSS', 'Javascript', 'Typescript', 'PHP', 'Tailwind', 'Prisma', 'SQL', 'Supabase'],
+    'url'         => 'public/assets/Kaizix.pdf', 'download' => true,
   ],
 ];
 ?>
