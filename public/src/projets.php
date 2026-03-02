@@ -1,5 +1,4 @@
 <?php
-// Tableau des projets — Modifiez ici pour ajouter / supprimer vos projets
 $projets = [
   [
     'numero'      => '01',

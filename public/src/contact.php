@@ -1,5 +1,4 @@
 <?php
-// Liens de contact — Modifiez ici
 $contacts = [
   ['icon' => '✉️', 'label' => 'Email',           'url' => 'mailto:theoveber79@gmail.com'],
   ['icon' => '💼', 'label' => 'LinkedIn',         'url' => 'https://linkedin.com/in/theo-veber', 'external' => true],

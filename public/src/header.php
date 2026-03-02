@@ -1,5 +1,5 @@
 <?php
-// Page active (pour surligner le lien nav)
+// Page active
 $currentPage = basename($_SERVER['PHP_SELF'], '.php');
 ?>
 <!DOCTYPE html>

@@ -1,5 +1,4 @@
 <?php
-// Compétences — Modifiez le nom et le pourcentage
 $competences = [
   ['nom' => 'HTML / CSS / JS',             'niveau' => 100],
   ['nom' => 'PHP / MySQL',                 'niveau' => 100],

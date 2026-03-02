@@ -1,5 +1,4 @@
 <?php
-// Expériences professionnelles
 $experiences = [
   [
     'date'        => 'Février 2026 — Mars 2026',
@@ -39,7 +38,6 @@ $experiences = [
   ],
 ];
 
-// Formations
 $formations = [
   [
     'date'        => '2024 — 2026',

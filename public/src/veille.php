@@ -1,5 +1,4 @@
 <?php
-// Articles de veille
 $articles = [
   [
     'categorie'   => 'Intelligence Artificielle',
