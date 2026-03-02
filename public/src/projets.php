@@ -3,7 +3,7 @@
 $projets = [
   [
     'numero'      => '01',
-    'cover'       => 'cover-1',
+    'cover'       => 'public/img/LogoOCS.jpg',
     'titre'       => 'OCS - Mise en place d\'un serveur OCS Inventory',
     'description' => 'Installation et configuration d\'un serveur OCS Inventory pour l\'inventaire matériel et logiciel d\'une infrastructure informatique.',
     'tags'        => ['PHP', 'MariaDB', 'Linux', 'Apache' ,'OCS Inventory'],
@@ -11,7 +11,7 @@ $projets = [
   ],
   [
     'numero'      => '02',
-    'cover'       => 'cover-2',
+    'cover'       => 'public/img/GLPILogo.png',
     'titre'       => 'GLPI - Mise en place d\'un service de ticket GLPI',
     'description' => 'Installation et configuration d\'un service de ticket GLPI pour la gestion des incidents et des demandes de services.',
     'tags'        => ['PHP', 'MariaDB', 'Linux', 'Apache' ,'GLPI'],
@@ -19,7 +19,7 @@ $projets = [
   ],
   [
     'numero'      => '03',
-    'cover'       => 'cover-3',
+    'cover'       => 'public/img/LogoFFSS.png',
     'titre'       => 'FFSSActus - Création d\'un site d\'actus en temps réel avec flux RSS pour la FFSS',
     'description' => 'Développement d\'un site web dynamique affichant les actualités en temps réel de la Fédération Française de Sauvetage et de Secourisme (FFSS) à partir de flux RSS.',
     'tags'        => ['CSS', 'JavaScript', 'RSS', 'PHP', 'SQL'],
@@ -27,7 +27,7 @@ $projets = [
   ],
   [
     'numero'      => '04',
-    'cover'       => 'cover-4',
+    'cover'       => 'public/img/LogoFFSS.png',
     'titre'       => 'FFSSInventory - Application de bureau pour l\'inventaire du matériel de la FFSS',
     'description' => 'Développement d\'une application de bureau pour l\'inventaire du matériel de la Fédération Française de Sauvetage et de Secourisme (FFSS) avec synchronisation cloud.',
     'tags'        => ['CSS', 'Javascript', 'PHP', 'SQL', 'Scanner'],
@@ -35,7 +35,7 @@ $projets = [
   ],
   [
     'numero'      => '05',
-    'cover'       => 'cover-5',
+    'cover'       => 'public/img/LogoCheck.png',
     'titre'       => 'CheckMyStars - Site d\'évaluation de biens immobiliers',
     'description' => 'Développement d\'un site web d\'évaluation de biens immobiliers avec gestion des données et génération de rapports.',
     'tags'        => ['HTML', 'CSS', 'Javascript', 'PHP', 'SQL', 'Bootstrap', 'Twig'],
@@ -43,7 +43,7 @@ $projets = [
   ],
   [
     'numero'      => '06',
-    'cover'       => 'cover-6',
+    'cover'       => 'public/img/LogoKaizix.png',
     'titre'       => 'Kaizix Learning - Site de e-learning pour la formation continue',
     'description' => 'Développement d\'un site web de formation continue en e-learning avec gestion des utilisateurs, des cours et des évaluations.',
     'tags'        => ['CSS', 'Javascript', 'Typescript', 'PHP', 'Tailwind', 'Prisma', 'SQL', 'Supabase'],
@@ -63,9 +63,11 @@ $projets = [
     <?php foreach ($projets as $projet): ?>
     <div class="project-card reveal">
       <div class="project-cover">
-        <div class="project-cover-inner <?php echo htmlspecialchars($projet['cover']); ?>">
-          <?php echo htmlspecialchars($projet['numero']); ?>
-        </div>
+        <img
+          src="<?php echo htmlspecialchars($projet['cover']); ?>"
+          alt="<?php echo htmlspecialchars($projet['titre']); ?>"
+          class="project-cover-img"
+        />
       </div>
       <div class="project-body">
         <h3 style="text-align: center;"><?php echo htmlspecialchars($projet['titre']); ?></h3>

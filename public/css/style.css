@@ -121,8 +121,19 @@ section { padding: var(--section-padding-y) var(--section-padding-x); max-width:
 .project-card { background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden; transition: all 0.4s ease; cursor: pointer; position: relative; box-shadow: var(--shadow-sm); }
 .project-card:hover { transform: translateY(-6px); border-color: var(--accent); box-shadow: var(--shadow-hover); }
 .project-cover { height: 200px; position: relative; overflow: hidden; }
-.project-cover-inner { width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; font-family: var(--font-display); font-size: 3rem; font-weight: 900; transition: transform 0.5s ease; }
-.project-card:hover .project-cover-inner { transform: scale(1.05); }
+.project-cover-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  padding: 1.5rem;
+  transition: transform 0.5s ease;
+  background: var(--bg-alt);
+}
+
+.project-card:hover .project-cover-img {
+  transform: scale(1.05);
+}
+.project-cover-inner { width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; font-family: var(--font-display); font-size: 3rem; font-weight: 900; transition: transform 0.5s ease;  }
 .cover-1 { background: linear-gradient(135deg, #e8e0f0, #d5c8e8); color: #6b5b95; }
 .cover-2 { background: linear-gradient(135deg, #d5ecd5, #c2e0c2); color: #2d7a3a; }
 .cover-3 { background: linear-gradient(135deg, #f0dcd8, #e8c8c0); color: #b44a3a; }
