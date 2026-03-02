@@ -4,44 +4,42 @@ $projets = [
   [
     'numero'      => '01',
     'cover'       => 'cover-1',
-    'titre'       => 'Application de gestion',
-    'description' => 'Application web permettant la gestion de clients, de tickets et le suivi des interventions techniques.',
-    'tags'        => ['PHP', 'MySQL', 'Bootstrap'],
+    'titre'       => 'OCS - Mise en place d\'un serveur OCS Inventory',
+    'description' => 'Installation et configuration d\'un serveur OCS Inventory pour l\'inventaire matériel et logiciel d\'une infrastructure informatique.',
+    'tags'        => ['PHP', 'MariaDB', 'Linux', 'Apache' ,'OCS Inventory'],
+    'url'         => 'public/assets/Serveur_OCS.pdf', 'download' => true,
   ],
   [
     'numero'      => '02',
     'cover'       => 'cover-2',
-    'titre'       => 'Site e-commerce',
-    'description' => 'Boutique en ligne complète avec panier, système de paiement et gestion des commandes.',
-    'tags'        => ['React', 'Node.js', 'MongoDB'],
+    'titre'       => 'GLPI - Mise en place d\'un service de ticket GLPI',
+    'description' => 'Installation et configuration d\'un service de ticket GLPI pour la gestion des incidents et des demandes de services.',
+    'tags'        => ['PHP', 'MariaDB', 'Linux', 'Apache' ,'GLPI'],
+    'url'         => 'public/assets/GLPI.pdf', 'download' => true,
   ],
   [
     'numero'      => '03',
     'cover'       => 'cover-3',
-    'titre'       => 'Dashboard monitoring',
-    'description' => 'Tableau de bord de supervision réseau en temps réel avec alertes et visualisation des métriques.',
-    'tags'        => ['Python', 'Grafana', 'Docker'],
+    'titre'       => 'FFSSActus - Création d\'un site d\'actus en temps réel avec flux RSS pour la FFSS',
+    'description' => 'Développement d\'un site web dynamique affichant les actualités en temps réel de la Fédération Française de Sauvetage et de Secourisme (FFSS) à partir de flux RSS.',
+    'tags'        => ['HTML', 'CSS', 'JavaScript', 'RSS', 'PHP', 'SQL'],
+    'url'         => 'public/assets/FFSSActus.pdf', 'download' => true,
   ],
   [
     'numero'      => '04',
     'cover'       => 'cover-4',
-    'titre'       => 'Application mobile',
-    'description' => 'Application mobile de gestion de tâches avec notifications push et synchronisation cloud.',
-    'tags'        => ['Flutter', 'Firebase', 'Dart'],
+    'titre'       => 'FFSSInventory - Application de bureau pour l\'inventaire du matériel de la FFSS',
+    'description' => 'Développement d\'une application de bureau pour l\'inventaire du matériel de la Fédération Française de Sauvetage et de Secourisme (FFSS) avec synchronisation cloud.',
+    'tags'        => ['HTML', 'CSS', 'Javascript', 'PHP', 'SQL', 'Scanner'],
+    'url'         => 'public/assets/FFSSInventory.pdf', 'download' => true,
   ],
   [
     'numero'      => '05',
     'cover'       => 'cover-5',
-    'titre'       => 'API RESTful',
-    'description' => "Conception et développement d'une API REST sécurisée avec authentification JWT et documentation Swagger.",
-    'tags'        => ['Node.js', 'Express', 'JWT'],
-  ],
-  [
-    'numero'      => '06',
-    'cover'       => 'cover-6',
-    'titre'       => 'Infrastructure réseau',
-    'description' => "Mise en place d'une infrastructure réseau virtualisée avec VLAN, VPN et serveurs Active Directory.",
-    'tags'        => ['VMware', 'Cisco', 'Windows Server'],
+    'titre'       => 'CheckMyStars - Site d\'évaluation de biens immobiliers',
+    'description' => 'Développement d\'un site web d\'évaluation de biens immobiliers avec gestion des données et génération de rapports.',
+    'tags'        => ['HTML', 'CSS', 'Javascript', 'PHP', 'SQL', 'Bootstrap', 'Twig'],
+    'url'         => 'public/assets/CDC_CheckMyStars.pdf', 'download' => true,
   ],
 ];
 ?>
@@ -62,12 +60,21 @@ $projets = [
         </div>
       </div>
       <div class="project-body">
-        <h3><?php echo htmlspecialchars($projet['titre']); ?></h3>
+        <h3 style="text-align: center;"><?php echo htmlspecialchars($projet['titre']); ?></h3>
         <p><?php echo htmlspecialchars($projet['description']); ?></p>
         <div class="project-tags">
           <?php foreach ($projet['tags'] as $tag): ?>
             <span class="tag"><?php echo htmlspecialchars($tag); ?></span>
           <?php endforeach; ?>
+        </div><br>
+        <div>
+          <?php if (!empty($projet['url'])): ?>
+            <a href="<?php echo htmlspecialchars($projet['url']); ?>"
+               class="project-link"
+               <?php if (!empty($projet['download'])): ?>download<?php endif; ?>>
+              Voir la documentation
+            </a>
+          <?php endif; ?>
         </div>
       </div>
     </div>

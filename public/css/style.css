@@ -391,6 +391,16 @@ section {
   letter-spacing: 0.03em;
 }
 
+a.project-link {
+  display: inline-block;
+  margin-top: 0.5rem;
+  font-size: 0.85rem;
+  color: var(--accent);
+  text-decoration: underline;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
 
 /* ═══════════════════════════════════════════════════
    CV / TIMELINE
