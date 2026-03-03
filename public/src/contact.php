@@ -1,7 +1,7 @@
 <?php
 $contacts = [
   ['icon' => '✉️', 'label' => 'Email',           'url' => 'mailto:theoveber79@gmail.com'],
-  ['icon' => '💼', 'label' => 'LinkedIn',         'url' => 'https://linkedin.com/in/theo-veber', 'external' => true],
+  ['icon' => '💼', 'label' => 'LinkedIn',         'url' => 'https://linkedin.com/in/théo-veber-52b78a290/', 'external' => true],
   ['icon' => '🐙', 'label' => 'GitHub',           'url' => 'https://github.com/Theo4500',      'external' => true],
   ['icon' => '📄', 'label' => 'Télécharger mon CV', 'url' => 'public/assets/CV.pdf', 'download' => true],
 ];
